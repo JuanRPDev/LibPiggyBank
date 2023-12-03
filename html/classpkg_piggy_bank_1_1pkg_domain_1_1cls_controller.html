@@ -1,0 +1,1012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Piggy Bank: Referencia de la clase pkgPiggyBank.pkgDomain.clsController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Piggy-Bank.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">Piggy Bank<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Piggy Bank project documentation. Library PiggyBank</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacepkg_piggy_bank.html">pkgPiggyBank</a></li><li class="navelem"><a class="el" href="namespacepkg_piggy_bank_1_1pkg_domain.html">pkgDomain</a></li><li class="navelem"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html">clsController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-static-methods">Métodos públicos estáticos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#pri-static-attribs">Atributos estáticos privados</a> &#124;
+<a href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase pkgPiggyBank.pkgDomain.clsController</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manages the registration, updating and deletion operations of coins, bills, currencies and piggy banks, as well as the execution of transactions. Implement Singleton design patterns to maintain a single instance of the controller in the application.  
+ <a href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ab5e2545c55a138d8c9d9b45cc44ac0ec" id="r_ab5e2545c55a138d8c9d9b45cc44ac0ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#ab5e2545c55a138d8c9d9b45cc44ac0ec">toRegisterCurrency</a> (string prmOID, string prmName, double prmTRM, List&lt; double &gt; prmCoinsValues, List&lt; double &gt; prmBillsValues)</td></tr>
+<tr class="memdesc:ab5e2545c55a138d8c9d9b45cc44ac0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Introduces a new currency into the system, ensuring data integrity and non-duplication of the identifier. This operation is crucial to handle transactions in different currencies and bills, establishing the basis for international and local financial operations.  <br /></td></tr>
+<tr class="separator:ab5e2545c55a138d8c9d9b45cc44ac0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c22caa856755e6df521baa87c9ed07" id="r_a13c22caa856755e6df521baa87c9ed07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a13c22caa856755e6df521baa87c9ed07">toRegisterPiggyBank</a> (string prmOIDCurrency, int prmCoinsMaxCap, int prmBillsMaxCap, List&lt; double &gt; prmCoinsValues, List&lt; double &gt; prmBillsValues)</td></tr>
+<tr class="memdesc:a13c22caa856755e6df521baa87c9ed07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and register a new digital piggy bank, linked to a specific currency. This method is essential for the management of savings and transactions within the application, representing a key element in personal financial management. Ensures that there are no duplicate piggy banks and that the assigned currency is valid and exists in the system.  <br /></td></tr>
+<tr class="separator:a13c22caa856755e6df521baa87c9ed07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9e936bf4af0e346cd114ce5b469c42" id="r_a6c9e936bf4af0e346cd114ce5b469c42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a6c9e936bf4af0e346cd114ce5b469c42">toRegisterCoin</a> (string prmOIDCurrency, string prmOID, double prmValue, int prmYear)</td></tr>
+<tr class="memdesc:a6c9e936bf4af0e346cd114ce5b469c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new currency to an existing currency, verifying the non-collision of identifiers and the validity of the currency. This method is essential to update and keep the money supply updated and diversified in the application.  <br /></td></tr>
+<tr class="separator:a6c9e936bf4af0e346cd114ce5b469c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3b63b58e982b0e63c8cd785007c110" id="r_a0b3b63b58e982b0e63c8cd785007c110"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a0b3b63b58e982b0e63c8cd785007c110">toRegisterBill</a> (string prmOIDCurrency, string prmOID, double prmValue, int prmDay, int prmMonth, int prmYear)</td></tr>
+<tr class="memdesc:a0b3b63b58e982b0e63c8cd785007c110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incorporates a new bill into an existing currency, with uniqueness and authenticity verifications. This process is essential for expanding and updating the monetary spectrum managed by the application.  <br /></td></tr>
+<tr class="separator:a0b3b63b58e982b0e63c8cd785007c110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4728c9b23146c0aad7605e0e6778f57" id="r_ae4728c9b23146c0aad7605e0e6778f57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#ae4728c9b23146c0aad7605e0e6778f57">toUptadeCurrency</a> (string prmOID, string prmName, double prmTRM, List&lt; double &gt; prmCoinsValues, List&lt; double &gt; prmBillsValues)</td></tr>
+<tr class="memdesc:ae4728c9b23146c0aad7605e0e6778f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the attributes of an existing currency, including its name, exchange rate, and coin and bill values. This method is critical to reflect changes in the market and adjustments in monetary policies.  <br /></td></tr>
+<tr class="separator:ae4728c9b23146c0aad7605e0e6778f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af739c8aaecba091a4a6d540a7bb127ff" id="r_af739c8aaecba091a4a6d540a7bb127ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#af739c8aaecba091a4a6d540a7bb127ff">toUpdatePiggyBank</a> (string prmOIDCurrency, int prmCoinsMaxCap, int prmBillsMaxCap, List&lt; double &gt; prmCoinsValues, List&lt; double &gt; prmBillsValues)</td></tr>
+<tr class="memdesc:af739c8aaecba091a4a6d540a7bb127ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the parameters of an existing piggy bank, including its capacity and the values of coins and bills it handles. This operation is crucial to adapt the piggy bank to changes in savings and monetary management needs.  <br /></td></tr>
+<tr class="separator:af739c8aaecba091a4a6d540a7bb127ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1245d1ca289210a66ddcf27cc2171a77" id="r_a1245d1ca289210a66ddcf27cc2171a77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a1245d1ca289210a66ddcf27cc2171a77">toUpdateCoin</a> (string prmOIDCurrency, string prmOID, double prmValue, int prmYear)</td></tr>
+<tr class="memdesc:a1245d1ca289210a66ddcf27cc2171a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the attributes of an existing currency within a specific currency. This operation allows you to adjust the values and characteristics of the coins to maintain their relevance and accuracy.  <br /></td></tr>
+<tr class="separator:a1245d1ca289210a66ddcf27cc2171a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59cd5633040cd6f24e6d600757cc2c1" id="r_ae59cd5633040cd6f24e6d600757cc2c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#ae59cd5633040cd6f24e6d600757cc2c1">toUpdateBill</a> (string prmOIDCurrency, string prmOID, double prmValue, int prmDay, int prmMonth, int prmYear)</td></tr>
+<tr class="memdesc:ae59cd5633040cd6f24e6d600757cc2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the details of an existing bill within a currency, including its value and issue date. Essential for the correct management and recognition of bills in various financial operations.  <br /></td></tr>
+<tr class="separator:ae59cd5633040cd6f24e6d600757cc2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2e97cd5c9b23f563c1fb9aa63336a1" id="r_a8d2e97cd5c9b23f563c1fb9aa63336a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a8d2e97cd5c9b23f563c1fb9aa63336a1">toDeleteCurrency</a> (string prmOID)</td></tr>
+<tr class="memdesc:a8d2e97cd5c9b23f563c1fb9aa63336a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a currency from the system, making sure it is not linked to any active piggy banks. This process is critical to maintaining the integrity and updating of the monetary system in the application.  <br /></td></tr>
+<tr class="separator:a8d2e97cd5c9b23f563c1fb9aa63336a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f76fac54cd6736d7f71cd018218364c" id="r_a0f76fac54cd6736d7f71cd018218364c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a0f76fac54cd6736d7f71cd018218364c">toDeletePiggyBank</a> ()</td></tr>
+<tr class="memdesc:a0f76fac54cd6736d7f71cd018218364c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the existing piggy bank, after verifying that it does not contain coins or bills. This feature is essential for the proper management of piggy banks and their life cycle within the application.  <br /></td></tr>
+<tr class="separator:a0f76fac54cd6736d7f71cd018218364c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa71078b5290107c3f30e0fad910511" id="r_abaa71078b5290107c3f30e0fad910511"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#abaa71078b5290107c3f30e0fad910511">toDeleteCoin</a> (string prmOIDCurrency, string prmOID)</td></tr>
+<tr class="memdesc:abaa71078b5290107c3f30e0fad910511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a specific coin from a currency, first verifying its existence and validity. Essential for correct updating and maintenance of the coin catalog.  <br /></td></tr>
+<tr class="separator:abaa71078b5290107c3f30e0fad910511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0279bb4e4b7862553fa6ea7663cdfd1e" id="r_a0279bb4e4b7862553fa6ea7663cdfd1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a0279bb4e4b7862553fa6ea7663cdfd1e">toDeleteBill</a> (string prmOIDCurrency, string prmOID)</td></tr>
+<tr class="memdesc:a0279bb4e4b7862553fa6ea7663cdfd1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a specific bill from a currency, ensuring that the currency and bill exist and are valid. Important for effective and accurate management of bill inventory in the application.  <br /></td></tr>
+<tr class="separator:a0279bb4e4b7862553fa6ea7663cdfd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace90fabe49f2adcccc0fa7ebc51b3cd4" id="r_ace90fabe49f2adcccc0fa7ebc51b3cd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#ace90fabe49f2adcccc0fa7ebc51b3cd4">coinsIncome</a> (List&lt; double &gt; prmValues)</td></tr>
+<tr class="memdesc:ace90fabe49f2adcccc0fa7ebc51b3cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds coins to the piggy bank, verifying its existence and capacity, as well as the validity of the coins according to the currency. This method is essential for managing savings and makes it easier to track monetary income in the piggy bank.  <br /></td></tr>
+<tr class="separator:ace90fabe49f2adcccc0fa7ebc51b3cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cc2b6f3066d66c324e79d736a47ce0" id="r_a47cc2b6f3066d66c324e79d736a47ce0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a47cc2b6f3066d66c324e79d736a47ce0">coinsWithdrawal</a> (List&lt; double &gt; prmValues)</td></tr>
+<tr class="memdesc:a47cc2b6f3066d66c324e79d736a47ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Withdraw coins from the piggy bank, ensuring that the requested values are available and valid. This process is key to effective savings management and provides flexibility in access to funds.  <br /></td></tr>
+<tr class="separator:a47cc2b6f3066d66c324e79d736a47ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7310832fff0bdb8a20457dae6f99f34" id="r_ab7310832fff0bdb8a20457dae6f99f34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#ab7310832fff0bdb8a20457dae6f99f34">billsIncome</a> (List&lt; double &gt; prmValues)</td></tr>
+<tr class="memdesc:ab7310832fff0bdb8a20457dae6f99f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deposits bills into the piggy bank, checking the existence of the piggy bank and the validity of the bills according to the currency. Essential for the contribution and management of greater amounts of savings, expanding monetary storage capacities.  <br /></td></tr>
+<tr class="separator:ab7310832fff0bdb8a20457dae6f99f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0d42de07de7aabf1324db85c1d06f0" id="r_afd0d42de07de7aabf1324db85c1d06f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#afd0d42de07de7aabf1324db85c1d06f0">billsWithdrawal</a> (List&lt; double &gt; prmValues)</td></tr>
+<tr class="memdesc:afd0d42de07de7aabf1324db85c1d06f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the extraction of bills from the piggy bank, verifying the availability and validity of the requested bills. This method is crucial for effective access to accumulated savings and facilitates personal financial management.  <br /></td></tr>
+<tr class="separator:afd0d42de07de7aabf1324db85c1d06f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Métodos públicos estáticos</h2></td></tr>
+<tr class="memitem:a646c8a1b75f52bd8c5a3131c7f0e07c2" id="r_a646c8a1b75f52bd8c5a3131c7f0e07c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html">clsController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a646c8a1b75f52bd8c5a3131c7f0e07c2">getInstance</a> ()</td></tr>
+<tr class="memdesc:a646c8a1b75f52bd8c5a3131c7f0e07c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or creates a single instance of the clsController class.  <br /></td></tr>
+<tr class="separator:a646c8a1b75f52bd8c5a3131c7f0e07c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a8697c33f9341455577841366f2290faa" id="r_a8697c33f9341455577841366f2290faa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a8697c33f9341455577841366f2290faa">clsController</a> ()</td></tr>
+<tr class="memdesc:a8697c33f9341455577841366f2290faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor to prevent creation of external instances and ensure the Singleton pattern.  <br /></td></tr>
+<tr class="separator:a8697c33f9341455577841366f2290faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:adedce26992c2b9011abd2b72d8f2af53" id="r_adedce26992c2b9011abd2b72d8f2af53"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_currency.html">clsCurrency</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#adedce26992c2b9011abd2b72d8f2af53">attCurrencies</a></td></tr>
+<tr class="memdesc:adedce26992c2b9011abd2b72d8f2af53"><td class="mdescLeft">&#160;</td><td class="mdescRight">value&gt;Instance of the class clsPiggyBank that contains the current piggy bank in use in the application. <br /></td></tr>
+<tr class="separator:adedce26992c2b9011abd2b72d8f2af53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356c8465c2a1e25bcd4714dd9d1da758" id="r_a356c8465c2a1e25bcd4714dd9d1da758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_piggy_bank.html">clsPiggyBank</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a356c8465c2a1e25bcd4714dd9d1da758">attPiggy</a></td></tr>
+<tr class="separator:a356c8465c2a1e25bcd4714dd9d1da758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Atributos estáticos privados</h2></td></tr>
+<tr class="memitem:a508a59e14d2b4156f6228467ca16f00e" id="r_a508a59e14d2b4156f6228467ca16f00e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html">clsController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html#a508a59e14d2b4156f6228467ca16f00e">attInstance</a></td></tr>
+<tr class="memdesc:a508a59e14d2b4156f6228467ca16f00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single instance of clsController to ensure the Singleton pattern. <br /></td></tr>
+<tr class="separator:a508a59e14d2b4156f6228467ca16f00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Manages the registration, updating and deletion operations of coins, bills, currencies and piggy banks, as well as the execution of transactions. Implement Singleton design patterns to maintain a single instance of the controller in the application. </p>
+</div><h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="a8697c33f9341455577841366f2290faa" name="a8697c33f9341455577841366f2290faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8697c33f9341455577841366f2290faa">&#9670;&#160;</a></span>clsController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pkgPiggyBank.pkgDomain.clsController.clsController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Private constructor to prevent creation of external instances and ensure the Singleton pattern. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="ab7310832fff0bdb8a20457dae6f99f34" name="ab7310832fff0bdb8a20457dae6f99f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7310832fff0bdb8a20457dae6f99f34">&#9670;&#160;</a></span>billsIncome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.billsIncome </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmValues</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deposits bills into the piggy bank, checking the existence of the piggy bank and the validity of the bills according to the currency. Essential for the contribution and management of greater amounts of savings, expanding monetary storage capacities. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmValues</td><td>List of values of the bills to be deposited in the piggy bank.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the bills are deposited correctly, False if the piggy bank does not exist or the bills are invalid.</dd></dl>
+
+</div>
+</div>
+<a id="afd0d42de07de7aabf1324db85c1d06f0" name="afd0d42de07de7aabf1324db85c1d06f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0d42de07de7aabf1324db85c1d06f0">&#9670;&#160;</a></span>billsWithdrawal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.billsWithdrawal </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmValues</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows the extraction of bills from the piggy bank, verifying the availability and validity of the requested bills. This method is crucial for effective access to accumulated savings and facilitates personal financial management. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmValues</td><td>List of values of the bills that you want to withdraw from the piggy bank.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the bills are successfully withdrawn, False if the piggy bank does not contain the requested bills or does not exist.</dd></dl>
+
+</div>
+</div>
+<a id="ace90fabe49f2adcccc0fa7ebc51b3cd4" name="ace90fabe49f2adcccc0fa7ebc51b3cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace90fabe49f2adcccc0fa7ebc51b3cd4">&#9670;&#160;</a></span>coinsIncome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.coinsIncome </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmValues</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds coins to the piggy bank, verifying its existence and capacity, as well as the validity of the coins according to the currency. This method is essential for managing savings and makes it easier to track monetary income in the piggy bank. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmValues</td><td>List of values of the coins to be entered into the piggy bank.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the coins are added successfully, False if the piggy bank does not exist, is full or the coins are invalid.</dd></dl>
+
+</div>
+</div>
+<a id="a47cc2b6f3066d66c324e79d736a47ce0" name="a47cc2b6f3066d66c324e79d736a47ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cc2b6f3066d66c324e79d736a47ce0">&#9670;&#160;</a></span>coinsWithdrawal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.coinsWithdrawal </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmValues</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Withdraw coins from the piggy bank, ensuring that the requested values are available and valid. This process is key to effective savings management and provides flexibility in access to funds. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmValues</td><td>List of values of the coins that you want to withdraw from the piggy bank.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the coins are successfully withdrawn, False if the piggy bank does not have the requested coins or does not exist.</dd></dl>
+
+</div>
+</div>
+<a id="a646c8a1b75f52bd8c5a3131c7f0e07c2" name="a646c8a1b75f52bd8c5a3131c7f0e07c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646c8a1b75f52bd8c5a3131c7f0e07c2">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html">clsController</a> pkgPiggyBank.pkgDomain.clsController.getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or creates a single instance of the clsController class. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Single instance of clsController.</dd></dl>
+
+</div>
+</div>
+<a id="a0279bb4e4b7862553fa6ea7663cdfd1e" name="a0279bb4e4b7862553fa6ea7663cdfd1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0279bb4e4b7862553fa6ea7663cdfd1e">&#9670;&#160;</a></span>toDeleteBill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toDeleteBill </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a specific bill from a currency, ensuring that the currency and bill exist and are valid. Important for effective and accurate management of bill inventory in the application. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency that the bill contains.</td></tr>
+    <tr><td class="paramname">prmOID</td><td>Identifier of the bill to delete.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the bill is deleted successfully, False if the currency/bill does not exist or there are errors.</dd></dl>
+
+</div>
+</div>
+<a id="abaa71078b5290107c3f30e0fad910511" name="abaa71078b5290107c3f30e0fad910511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa71078b5290107c3f30e0fad910511">&#9670;&#160;</a></span>toDeleteCoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toDeleteCoin </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a specific coin from a currency, first verifying its existence and validity. Essential for correct updating and maintenance of the coin catalog. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency that contains the currency.</td></tr>
+    <tr><td class="paramname">prmOID</td><td>Identifier of the currency to delete.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the currency is removed successfully, False if the currency/coin does not exist or there is an error.</dd></dl>
+
+</div>
+</div>
+<a id="a8d2e97cd5c9b23f563c1fb9aa63336a1" name="a8d2e97cd5c9b23f563c1fb9aa63336a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2e97cd5c9b23f563c1fb9aa63336a1">&#9670;&#160;</a></span>toDeleteCurrency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toDeleteCurrency </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a currency from the system, making sure it is not linked to any active piggy banks. This process is critical to maintaining the integrity and updating of the monetary system in the application. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOID</td><td>Identifier of the currency to delete.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the currency is successfully deleted, False if it is in use or does not exist.</dd></dl>
+
+</div>
+</div>
+<a id="a0f76fac54cd6736d7f71cd018218364c" name="a0f76fac54cd6736d7f71cd018218364c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f76fac54cd6736d7f71cd018218364c">&#9670;&#160;</a></span>toDeletePiggyBank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toDeletePiggyBank </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the existing piggy bank, after verifying that it does not contain coins or bills. This feature is essential for the proper management of piggy banks and their life cycle within the application. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the piggy bank is successfully deleted, False if it contains coins/bills or does not exist.</dd></dl>
+
+</div>
+</div>
+<a id="a0b3b63b58e982b0e63c8cd785007c110" name="a0b3b63b58e982b0e63c8cd785007c110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3b63b58e982b0e63c8cd785007c110">&#9670;&#160;</a></span>toRegisterBill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toRegisterBill </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prmValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmDay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmMonth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Incorporates a new bill into an existing currency, with uniqueness and authenticity verifications. This process is essential for expanding and updating the monetary spectrum managed by the application. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency that the new bill will incorporate.</td></tr>
+    <tr><td class="paramname">prmOID</td><td>Unique identifier of the new bill, used for its management and individual recognition.</td></tr>
+    <tr><td class="paramname">prmValue</td><td>Nominal value of the bill, key in calculation operations and financial transactions.</td></tr>
+    <tr><td class="paramname">prmDay</td><td>Day of issue of the bill, part of its identification and authenticity control.</td></tr>
+    <tr><td class="paramname">prmMonth</td><td>Month of issue of the bill, important for the historical record and its validity.</td></tr>
+    <tr><td class="paramname">prmYear</td><td>Year of issue of the bill, providing a time frame for its use and circulation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Boolean that reflects the success (True) or failure (False) of the bill registration operation.</dd></dl>
+
+</div>
+</div>
+<a id="a6c9e936bf4af0e346cd114ce5b469c42" name="a6c9e936bf4af0e346cd114ce5b469c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9e936bf4af0e346cd114ce5b469c42">&#9670;&#160;</a></span>toRegisterCoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toRegisterCoin </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prmValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new currency to an existing currency, verifying the non-collision of identifiers and the validity of the currency. This method is essential to update and keep the money supply updated and diversified in the application. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency to which the new currency will be added.</td></tr>
+    <tr><td class="paramname">prmOID</td><td>Unique identifier for the new currency, ensuring its distinction and individualized management.</td></tr>
+    <tr><td class="paramname">prmValue</td><td>Nominal value of the new currency, relevant for financial transactions and calculations.</td></tr>
+    <tr><td class="paramname">prmYear</td><td>Year of issue of the coin, providing historical context and validity.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Boolean indicating whether the coin was added successfully (True) or if there was a failure (False).</dd></dl>
+
+</div>
+</div>
+<a id="ab5e2545c55a138d8c9d9b45cc44ac0ec" name="ab5e2545c55a138d8c9d9b45cc44ac0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e2545c55a138d8c9d9b45cc44ac0ec">&#9670;&#160;</a></span>toRegisterCurrency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toRegisterCurrency </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prmTRM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmCoinsValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmBillsValues</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Introduces a new currency into the system, ensuring data integrity and non-duplication of the identifier. This operation is crucial to handle transactions in different currencies and bills, establishing the basis for international and local financial operations. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOID</td><td>Unique identifier for the new currency, used as a primary key in currency management.</td></tr>
+    <tr><td class="paramname">prmName</td><td>Official denomination of the currency, which facilitates its identification and use in financial operations.</td></tr>
+    <tr><td class="paramname">prmTRM</td><td>Official currency exchange rate, essential for monetary conversions and comparisons.</td></tr>
+    <tr><td class="paramname">prmCoinsValues</td><td>Set of nominal values of the coins in circulation for this currency.</td></tr>
+    <tr><td class="paramname">prmBillsValues</td><td>Set of face values of the bills in circulation for this currency.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Boolean indicating whether the operation was successful (True) or whether a duplicate currency was found (False).</dd></dl>
+
+</div>
+</div>
+<a id="a13c22caa856755e6df521baa87c9ed07" name="a13c22caa856755e6df521baa87c9ed07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c22caa856755e6df521baa87c9ed07">&#9670;&#160;</a></span>toRegisterPiggyBank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toRegisterPiggyBank </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmCoinsMaxCap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmBillsMaxCap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmCoinsValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmBillsValues</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create and register a new digital piggy bank, linked to a specific currency. This method is essential for the management of savings and transactions within the application, representing a key element in personal financial management. Ensures that there are no duplicate piggy banks and that the assigned currency is valid and exists in the system. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency associated with the new piggy bank, essential to define the type of coin and bill it will handle.</td></tr>
+    <tr><td class="paramname">prmCoinsMaxCap</td><td>Maximum coin storage capacity in the piggy bank, determining its physical limit.</td></tr>
+    <tr><td class="paramname">prmBillsMaxCap</td><td>Maximum storage capacity for bills in the piggy bank, defining its savings capacity.</td></tr>
+    <tr><td class="paramname">prmCoinsValues</td><td>List of nominal values of coins that the piggy bank initially contains.</td></tr>
+    <tr><td class="paramname">prmBillsValues</td><td>List of face values of bills that the piggy bank initially contains.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Boolean that confirms the successful creation of the piggy bank (True) or indicates failures in the process (False).</dd></dl>
+
+</div>
+</div>
+<a id="ae59cd5633040cd6f24e6d600757cc2c1" name="ae59cd5633040cd6f24e6d600757cc2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59cd5633040cd6f24e6d600757cc2c1">&#9670;&#160;</a></span>toUpdateBill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toUpdateBill </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prmValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmDay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmMonth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the details of an existing bill within a currency, including its value and issue date. Essential for the correct management and recognition of bills in various financial operations. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency that the bill contains.</td></tr>
+    <tr><td class="paramname">prmOID</td><td>Unique identifier of the bill to update.</td></tr>
+    <tr><td class="paramname">prmValue</td><td>New value of the bill.</td></tr>
+    <tr><td class="paramname">prmDay</td><td>Updated day of bill issuance.</td></tr>
+    <tr><td class="paramname">prmMonth</td><td>Updated month of bill issuance.</td></tr>
+    <tr><td class="paramname">prmYear</td><td>Updated year of bill issuance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the update is successful, False in case of problems or if the currency/bill does not exist.</dd></dl>
+
+</div>
+</div>
+<a id="a1245d1ca289210a66ddcf27cc2171a77" name="a1245d1ca289210a66ddcf27cc2171a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1245d1ca289210a66ddcf27cc2171a77">&#9670;&#160;</a></span>toUpdateCoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toUpdateCoin </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prmValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifies the attributes of an existing currency within a specific currency. This operation allows you to adjust the values and characteristics of the coins to maintain their relevance and accuracy. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency that contains the currency.</td></tr>
+    <tr><td class="paramname">prmOID</td><td>Unique identifier of the currency to update.</td></tr>
+    <tr><td class="paramname">prmValue</td><td>New currency value.</td></tr>
+    <tr><td class="paramname">prmYear</td><td>Updated year of issue of the currency.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the update is successful, False if there are problems or the currency/currency does not exist.</dd></dl>
+
+</div>
+</div>
+<a id="af739c8aaecba091a4a6d540a7bb127ff" name="af739c8aaecba091a4a6d540a7bb127ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af739c8aaecba091a4a6d540a7bb127ff">&#9670;&#160;</a></span>toUpdatePiggyBank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toUpdatePiggyBank </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOIDCurrency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmCoinsMaxCap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prmBillsMaxCap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmCoinsValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmBillsValues</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the parameters of an existing piggy bank, including its capacity and the values of coins and bills it handles. This operation is crucial to adapt the piggy bank to changes in savings and monetary management needs. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOIDCurrency</td><td>Identifier of the currency associated with the piggy bank.</td></tr>
+    <tr><td class="paramname">prmCoinsMaxCap</td><td>New maximum coin capacity.</td></tr>
+    <tr><td class="paramname">prmBillsMaxCap</td><td>New maximum bill capacity.</td></tr>
+    <tr><td class="paramname">prmCoinsValues</td><td>Updated list of coin values.</td></tr>
+    <tr><td class="paramname">prmBillsValues</td><td>Updated list of bill values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>True if the piggy bank is updated successfully, False if it does not exist or there are problems updating.</dd></dl>
+
+</div>
+</div>
+<a id="ae4728c9b23146c0aad7605e0e6778f57" name="ae4728c9b23146c0aad7605e0e6778f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4728c9b23146c0aad7605e0e6778f57">&#9670;&#160;</a></span>toUptadeCurrency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pkgPiggyBank.pkgDomain.clsController.toUptadeCurrency </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmOID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prmName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prmTRM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmCoinsValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>prmBillsValues</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the attributes of an existing currency, including its name, exchange rate, and coin and bill values. This method is critical to reflect changes in the market and adjustments in monetary policies. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prmOID</td><td>Identifier of the currency to be updated, used as a reference to locate the currency.</td></tr>
+    <tr><td class="paramname">prmName</td><td>New name for the currency, reflecting possible official or commercial changes.</td></tr>
+    <tr><td class="paramname">prmTRM</td><td>New representative exchange rate, adjusted to current market conditions.</td></tr>
+    <tr><td class="paramname">prmCoinsValues</td><td>Updating coin values, keeping them relevant and current.</td></tr>
+    <tr><td class="paramname">prmBillsValues</td><td>Updating bill values, ensuring their alignment with economic reality.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Boolean indicating whether the update was successful (True) or whether there were errors (False).</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="adedce26992c2b9011abd2b72d8f2af53" name="adedce26992c2b9011abd2b72d8f2af53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedce26992c2b9011abd2b72d8f2af53">&#9670;&#160;</a></span>attCurrencies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_currency.html">clsCurrency</a>&gt; pkgPiggyBank.pkgDomain.clsController.attCurrencies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>value&gt;Instance of the class clsPiggyBank that contains the current piggy bank in use in the application.</p>
+
+</div>
+</div>
+<a id="a508a59e14d2b4156f6228467ca16f00e" name="a508a59e14d2b4156f6228467ca16f00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508a59e14d2b4156f6228467ca16f00e">&#9670;&#160;</a></span>attInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_controller.html">clsController</a> pkgPiggyBank.pkgDomain.clsController.attInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Single instance of clsController to ensure the Singleton pattern.</p>
+<p>value&gt;Instance of clsCurrency that stores the list of currencies available in the system.</p>
+
+</div>
+</div>
+<a id="a356c8465c2a1e25bcd4714dd9d1da758" name="a356c8465c2a1e25bcd4714dd9d1da758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356c8465c2a1e25bcd4714dd9d1da758">&#9670;&#160;</a></span>attPiggy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpkg_piggy_bank_1_1pkg_domain_1_1cls_piggy_bank.html">clsPiggyBank</a> pkgPiggyBank.pkgDomain.clsController.attPiggy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>C:/Users/vboxuser/Desktop/SoftwareII - LabsoftwareII/Software 2/appPiggyBank/libPiggyBank/<a class="el" href="cls_controller_8cs.html">clsController.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
